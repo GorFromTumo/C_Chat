@@ -96,14 +96,14 @@ if (fd>max_fd){
     	 {
        buffer[val]='\0';
        for(int j=0; j <MAX_CLIENTS;j++)
-      	 {
+      	   {
       if (client_sockets[j] !=0 && client_sockets[j]!=fd)
-           {
+          		 {
           send(client_sockets[j],buffer,strlen(buffer),0);
-           }
+           		}
 
 
-		}
+			}
 
 		}
 	}
